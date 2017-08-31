@@ -7,8 +7,8 @@
 <ul>
 <li><a href="#sec-2-1">2.1. the game</a>
 <ul>
-<li><a href="#sec-2-1-1">2.1.1. general information</a></li>
-<li><a href="#sec-2-1-2">2.1.2. how you win</a></li>
+<li><a href="#sec-2-1-1">2.1.1. General information</a></li>
+<li><a href="#sec-2-1-2">2.1.2. How you win</a></li>
 </ul>
 </li>
 <li><a href="#sec-2-2">2.2. strategy</a></li>
@@ -22,23 +22,23 @@
 
 # Goal of the project<a id="sec-1" name="sec-1"></a>
 
-write an assembly program will fight for memory with other programs inside a special vm with it's own instruction set
+Write an assembly program will fight for memory space with other programs inside a special vm with it's own instruction set.
 
 # How I accomplished it<a id="sec-2" name="sec-2"></a>
 
 ## the game<a id="sec-2-1" name="sec-2-1"></a>
 
-### general information<a id="sec-2-1-1" name="sec-2-1-1"></a>
+### General information<a id="sec-2-1-1" name="sec-2-1-1"></a>
 
-here's what wikipedia has to say about corewar "Core War is a 1984 programming game created by D. G. Jones and A. K. Dewdney in which two or more battle programs (called "warriors") compete for control of a virtual computer. These battle programs are written in an abstract assembly language called Redcode."
+Here's what wikipedia has to say about corewar "Core War is a 1984 programming game created by D. G. Jones and A. K. Dewdney in which two or more battle programs (called "warriors") compete for control of a virtual computer. These battle programs are written in an abstract assembly language called Redcode."
 
-### how you win<a id="sec-2-1-2" name="sec-2-1-2"></a>
+### How you win<a id="sec-2-1-2" name="sec-2-1-2"></a>
 
-the goal of the game is to be the last one to execute a live instruction
+The goal of the game is to be the last one to execute a live instruction.
 
 ## strategy<a id="sec-2-2" name="sec-2-2"></a>
 
-my strategy was self replication. I stored integers in 4 parallel processes then they copied all that data into concurrent memory locations at the same time, then executed that data as code to copy the same stuff again.
+My strategy was self replication. I stored the code needed to self replicate into 4 parallel processes then they copy all that code into adjacent memory locations at the same time. They then jump to that code just loaded into memory and execute it.
 
 # Grade<a id="sec-3" name="sec-3"></a>
 
