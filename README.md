@@ -5,13 +5,13 @@
 <li><a href="#sec-1">1. Goal of the project</a></li>
 <li><a href="#sec-2">2. How I accomplished it</a>
 <ul>
-<li><a href="#sec-2-1">2.1. the game</a>
+<li><a href="#sec-2-1">2.1. The game</a>
 <ul>
 <li><a href="#sec-2-1-1">2.1.1. General information</a></li>
-<li><a href="#sec-2-1-2">2.1.2. How you win</a></li>
+<li><a href="#sec-2-1-2">2.1.2. Goal</a></li>
 </ul>
 </li>
-<li><a href="#sec-2-2">2.2. strategy</a></li>
+<li><a href="#sec-2-2">2.2. Strategy</a></li>
 </ul>
 </li>
 <li><a href="#sec-3">3. Grade</a></li>
@@ -26,17 +26,17 @@ Write an assembly program will fight for memory space with other programs inside
 
 # How I accomplished it<a id="sec-2" name="sec-2"></a>
 
-## the game<a id="sec-2-1" name="sec-2-1"></a>
+## The game<a id="sec-2-1" name="sec-2-1"></a>
 
 ### General information<a id="sec-2-1-1" name="sec-2-1-1"></a>
 
 Here's what wikipedia has to say about corewar "Core War is a 1984 programming game created by D. G. Jones and A. K. Dewdney in which two or more battle programs (called "warriors") compete for control of a virtual computer. These battle programs are written in an abstract assembly language called Redcode."
 
-### How you win<a id="sec-2-1-2" name="sec-2-1-2"></a>
+### Goal<a id="sec-2-1-2" name="sec-2-1-2"></a>
 
 The goal of the game is to be the last one to execute a live instruction.
 
-## strategy<a id="sec-2-2" name="sec-2-2"></a>
+## Strategy<a id="sec-2-2" name="sec-2-2"></a>
 
 My strategy was self replication. I stored the code needed to self replicate into 4 parallel processes then they copy all that code into adjacent memory locations at the same time. They then jump to that code just loaded into memory and execute it.
 
