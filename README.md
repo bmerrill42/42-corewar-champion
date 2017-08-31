@@ -11,7 +11,7 @@
 <li><a href="#sec-2-1-2">2.1.2. how you win</a></li>
 </ul>
 </li>
-<li><a href="#sec-2-2">2.2. code outline</a></li>
+<li><a href="#sec-2-2">2.2. strategy</a></li>
 </ul>
 </li>
 <li><a href="#sec-3">3. grade</a></li>
@@ -36,9 +36,9 @@ here's what wikipedia has to say about corewar "Core War is a 1984 programming g
 
 the goal of the game is to be the last one to execute a live instruction
 
-## code outline<a id="sec-2-2" name="sec-2-2"></a>
+## strategy<a id="sec-2-2" name="sec-2-2"></a>
 
-the basic idea behind my warrior was, if I had a few parallel processes copy a bunch of information at the same time I could overwrite all the memory with my own code.
+my strategy was self replication. I stored integers in 4 parallel processes then they copied all that data into concurrent memory locations at the same time, then executed that data as code to copy the same stuff again.
 
 # grade<a id="sec-3" name="sec-3"></a>
 
