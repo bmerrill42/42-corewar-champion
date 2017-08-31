@@ -91,14 +91,14 @@ make a corewar assembly program that will beat other programs
 <tr>
 <td class="left">or</td>
 <td class="right">0x07</td>
-<td class="left">&vert;</td>
+<td class="left">Same as and but with an or (&vert; in C)</td>
 </tr>
 
 
 <tr>
 <td class="left">xor</td>
 <td class="right">0x08</td>
-<td class="left">&#xa0;</td>
+<td class="left">Same as and but with an xor (<sup>in</sup> C)</td>
 </tr>
 
 
