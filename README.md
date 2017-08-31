@@ -3,7 +3,17 @@
 <div id="text-table-of-contents">
 <ul>
 <li><a href="#sec-1">1. goal of the project</a></li>
-<li><a href="#sec-2">2. code</a></li>
+<li><a href="#sec-2">2. how I accomplished it</a>
+<ul>
+<li><a href="#sec-2-1">2.1. the game</a>
+<ul>
+<li><a href="#sec-2-1-1">2.1.1. general information</a></li>
+<li><a href="#sec-2-1-2">2.1.2. how you win</a></li>
+</ul>
+</li>
+<li><a href="#sec-2-2">2.2. code outline</a></li>
+</ul>
+</li>
 <li><a href="#sec-3">3. grade</a></li>
 <li><a href="#sec-4">4. opcode set</a></li>
 </ul>
@@ -12,86 +22,23 @@
 
 # goal of the project<a id="sec-1" name="sec-1"></a>
 
-write an assembly program for a vm
+write an assembly program will fight for memory with other programs inside a special vm with it's own instruction set
 
-# code<a id="sec-2" name="sec-2"></a>
+# how I accomplished it<a id="sec-2" name="sec-2"></a>
 
-            .name "Master_Shredder"
-            .comment "You speak my name, but you do not know me. I am Ch'rell, Oroku Saki, Duke Acureds, the one TRUE Shredder! I am a destroyer of worlds, and I fear no one!"
-    
-        st  r1, 6
-        live %1
-        ld %589824, r10
-        ld %655260, r11
-        st r10, -32
-        st r11, -33
-        sti r1, %:forks, %1
-        sti r1, %:shield, %1
-        and r2, %0, r2
-        fork %:shield
-        fork %:second
-    
-        first:
-            live %1
-            fork %:third
-            ld %150994945 ,r1
-            ld %0, r2
-            ld %-56, r4
-            ld %00, r3
-            zjmp %:forks
-    
-        second:
-            live %2
-            fork %:fourth
-            ld -17, r7
-            ld %4, r2
-            ld %-52, r4
-            ld %00, r3
-            zjmp %:forks
-    
-        third:
-            ld %190054660, r1
-            ld %8, r2
-            ld %-48, r4
-            ld %00, r3
-            zjmp %:forks
-    
-        fourth:
-            ld %50986950, r1
-            ld %12, r2
-            ld %-44, r4
-            ld %00, r3
-            zjmp %:forks
-    
-    forks:
-        live %5
-        and r7, %0, r7
-        sti r1, r2, %:fourth
-        fork %:forks
-        zjmp %-50
-    
-    shield:
-        live %6
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        st r10, 100
-        zjmp %:shield
+## the game<a id="sec-2-1" name="sec-2-1"></a>
+
+### general information<a id="sec-2-1-1" name="sec-2-1-1"></a>
+
+here's what wikipedia has to say about corewar "Core War is a 1984 programming game created by D. G. Jones and A. K. Dewdney in which two or more battle programs (called "warriors") compete for control of a virtual computer. These battle programs are written in an abstract assembly language called Redcode."
+
+### how you win<a id="sec-2-1-2" name="sec-2-1-2"></a>
+
+the goal of the game is to be the last one to execute a live instruction
+
+## code outline<a id="sec-2-2" name="sec-2-2"></a>
+
+the basic idea behind my warrior was, if I had a few parallel processes copy a bunch of information at the same time I could overwrite all the memory with my own code.
 
 # grade<a id="sec-3" name="sec-3"></a>
 
