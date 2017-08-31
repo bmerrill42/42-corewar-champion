@@ -98,7 +98,7 @@ make a corewar assembly program that will beat other programs
 <tr>
 <td class="left">xor</td>
 <td class="right">0x08</td>
-<td class="left">Same as and but with an xor (<sup>in</sup> C)</td>
+<td class="left">Same as and but with an xor (&#94;in C)</td>
 </tr>
 
 
