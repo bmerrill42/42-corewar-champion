@@ -2,8 +2,8 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. goal of the project</a></li>
-<li><a href="#sec-2">2. how I accomplished it</a>
+<li><a href="#sec-1">1. Goal of the project</a></li>
+<li><a href="#sec-2">2. How I accomplished it</a>
 <ul>
 <li><a href="#sec-2-1">2.1. the game</a>
 <ul>
@@ -14,17 +14,17 @@
 <li><a href="#sec-2-2">2.2. strategy</a></li>
 </ul>
 </li>
-<li><a href="#sec-3">3. grade</a></li>
-<li><a href="#sec-4">4. opcode set</a></li>
+<li><a href="#sec-3">3. Grade</a></li>
+<li><a href="#sec-4">4. Opcode set</a></li>
 </ul>
 </div>
 </div>
 
-# goal of the project<a id="sec-1" name="sec-1"></a>
+# Goal of the project<a id="sec-1" name="sec-1"></a>
 
 write an assembly program will fight for memory with other programs inside a special vm with it's own instruction set
 
-# how I accomplished it<a id="sec-2" name="sec-2"></a>
+# How I accomplished it<a id="sec-2" name="sec-2"></a>
 
 ## the game<a id="sec-2-1" name="sec-2-1"></a>
 
@@ -40,11 +40,11 @@ the goal of the game is to be the last one to execute a live instruction
 
 my strategy was self replication. I stored integers in 4 parallel processes then they copied all that data into concurrent memory locations at the same time, then executed that data as code to copy the same stuff again.
 
-# grade<a id="sec-3" name="sec-3"></a>
+# Grade<a id="sec-3" name="sec-3"></a>
 
 125/100
 
-# opcode set<a id="sec-4" name="sec-4"></a>
+# Opcode set<a id="sec-4" name="sec-4"></a>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
