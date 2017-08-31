@@ -2,24 +2,102 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Corewar Champion</a>
-<ul>
-<li><a href="#sec-1-1">1.1. goal of the project</a></li>
-<li><a href="#sec-1-2">1.2. opcode set</a></li>
-<li><a href="#sec-1-3">1.3. grade</a></li>
-</ul>
-</li>
+<li><a href="#sec-1">1. goal of the project</a></li>
+<li><a href="#sec-2">2. code</a></li>
+<li><a href="#sec-3">3. grade</a></li>
+<li><a href="#sec-4">4. opcode set</a></li>
 </ul>
 </div>
 </div>
 
-# Corewar Champion<a id="sec-1" name="sec-1"></a>
+# goal of the project<a id="sec-1" name="sec-1"></a>
 
-## goal of the project<a id="sec-1-1" name="sec-1-1"></a>
+write an assembly program for a vm
 
-make a corewar assembly program that will beat other programs
+# code<a id="sec-2" name="sec-2"></a>
 
-## opcode set<a id="sec-1-2" name="sec-1-2"></a>
+            .name "Master_Shredder"
+            .comment "You speak my name, but you do not know me. I am Ch'rell, Oroku Saki, Duke Acureds, the one TRUE Shredder! I am a destroyer of worlds, and I fear no one!"
+    
+        st  r1, 6
+        live %1
+        ld %589824, r10
+        ld %655260, r11
+        st r10, -32
+        st r11, -33
+        sti r1, %:forks, %1
+        sti r1, %:shield, %1
+        and r2, %0, r2
+        fork %:shield
+        fork %:second
+    
+        first:
+            live %1
+            fork %:third
+            ld %150994945 ,r1
+            ld %0, r2
+            ld %-56, r4
+            ld %00, r3
+            zjmp %:forks
+    
+        second:
+            live %2
+            fork %:fourth
+            ld -17, r7
+            ld %4, r2
+            ld %-52, r4
+            ld %00, r3
+            zjmp %:forks
+    
+        third:
+            ld %190054660, r1
+            ld %8, r2
+            ld %-48, r4
+            ld %00, r3
+            zjmp %:forks
+    
+        fourth:
+            ld %50986950, r1
+            ld %12, r2
+            ld %-44, r4
+            ld %00, r3
+            zjmp %:forks
+    
+    forks:
+        live %5
+        and r7, %0, r7
+        sti r1, r2, %:fourth
+        fork %:forks
+        zjmp %-50
+    
+    shield:
+        live %6
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        st r10, 100
+        zjmp %:shield
+
+# grade<a id="sec-3" name="sec-3"></a>
+
+125/100
+
+# opcode set<a id="sec-4" name="sec-4"></a>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
@@ -189,7 +267,3 @@ make a corewar assembly program that will beat other programs
 </tr>
 </tbody>
 </table>
-
-## grade<a id="sec-1-3" name="sec-1-3"></a>
-
-125/100
